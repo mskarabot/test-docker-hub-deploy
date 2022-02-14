@@ -41,4 +41,6 @@ jobs:
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: skmi/test-deploy-to-hub:${{ env.RELEASE_VERSION }}
+          tags: |
+            skmi/test-deploy-to-hub:${{ env.RELEASE_VERSION }}
+            skmi/test-deploy-to-hub:latest
